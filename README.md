@@ -1,4 +1,20 @@
 ### Rating stars component for your Ionic 2 App
+#### Installation:
+Copy the `ion-rating` folder to your `src/components/` folder and import it on your `app.module.ts` and add `IonRating` to the declarations arrays.
+
+```
+// ... other imports ...
+import { IonRating } from '../components/ion-rating/ion-rating';
+```
+```
+declarations: [
+  MyApp,
+  HomePage,
+  // ... other declarations ...
+  IonRating
+],
+```
+
 #### Usage:
 On your view:
 ```
