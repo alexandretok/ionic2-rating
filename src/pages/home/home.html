@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Criando componente
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-rating
+            [numStars]="5"
+            [readOnly]="false"
+            [value]="3.2"
+            (clicked)="starClicked($event)">
+    </ion-rating>
+</ion-content>
