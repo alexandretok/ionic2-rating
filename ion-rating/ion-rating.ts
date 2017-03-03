@@ -6,9 +6,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class IonRating {
 
-	@Input() numStars: number;
-	@Input() readOnly: boolean;
-	@Input() value: number;
+	@Input() numStars: number = 5;
+	@Input() readOnly: boolean = true;
+	@Input() value: number = 5;
 
 	@Output() clicked: EventEmitter<number> = new EventEmitter<number>();
 
