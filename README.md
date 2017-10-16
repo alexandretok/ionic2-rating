@@ -28,7 +28,7 @@ On your view:
 On your controller:
 ```
 starClicked(value){
-   console.log("Avaliaram em :", value);
+   console.log("Rated :", value);
 }
 ```
 
