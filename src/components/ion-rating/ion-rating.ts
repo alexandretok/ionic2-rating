@@ -21,15 +21,17 @@ export class IonRating {
   }
 
   calc(){
-  	this.stars = [];
-	  let tmp = this.value;
-	  for(let i=0; i < this.numStars; i++, tmp--)
-		  if(tmp >= 1)
-			  this.stars.push("star");
-		  else if (tmp < 1 && tmp > 0)
-			  this.stars.push("star-half");
-		  else
-			  this.stars.push("star-outline");
+    setTimeout(() => {
+      this.stars = [];
+      let tmp = this.value;
+      for(let i=0; i < this.numStars; i++, tmp--)
+        if(tmp >= 1)
+          this.stars.push("star");
+        else if (tmp < 1 && tmp > 0)
+          this.stars.push("star-half");
+        else
+          this.stars.push("star-outline");
+    }, 0);
   }
 
   starClicked(index){
