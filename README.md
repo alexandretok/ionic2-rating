@@ -21,7 +21,7 @@ On your view:
 <ion-rating
     [numStars]="5"
     [readOnly]="false"
-    [value]="3.2"
+    [value]="3.2" <!-- this can be either a number or a variable -->
     (clicked)="starClicked($event)">
 </ion-rating>
 ```
